@@ -1,10 +1,12 @@
+
+
 const generateAction = async (req, res) => {
   console.log('Received request');
 
   const input = JSON.parse(req.body).input;
 
   const response = await fetch(
-    `https://api-inference.huggingface.co/models/buildspace/ai-avatar-generator`,
+    `https://api-inference.huggingface.co/models/raza2/abrazaq`,
     {
       headers: {
         Authorization: `Bearer ${process.env.HF_AUTH_KEY}`,
